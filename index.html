@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ketki Khati's personal webpage showcasing interests in natural language processing, creative writing, and programming.">
+    <meta name="keywords" content="Ketki Khati, Information Systems, Natural Language Processing, Creative Writing, Programming">
     <title>Ketki Khati's Webpage</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -35,16 +37,33 @@
 
     <section id="favorite">
         <h2>Here's a Little Something I Like:</h2>
-        <img src="OIP.jpg" alt="A favorite image related to my interests" width="300">
+        <img src="OIP.jpg" alt="An abstract image representing data patterns and creativity" width="300">
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
         <p>If you have any questions or just want to say hi, feel free to reach out!</p>
         <ul>
-            <li><a href="mailto:khati.k@northeastern.edu">Email Me</a></li>
-            <li><a href="https://www.linkedin.com/in/ketki-khati-70296017a/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:khati.k@northeastern.edu" aria-label="Email Ketki Khati">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/ketki-khati-70296017a/" target="_blank" aria-label="Ketki Khati's LinkedIn Profile">LinkedIn</a></li>
         </ul>
+    </section>
+    
+    <!-- Optional Contact Form Section -->
+    <section id="form">
+        <h2>Leave a Message</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 </main>
 

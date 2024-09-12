@@ -1,39 +1,68 @@
-/* Continue from where the cut-off was */
-ul {
-  list-style-type: square; /* Square bullets for lists */
-  margin: 20px auto;
-  padding: 0 20px;
-  color: #555;
+/* General Styling */
+body {
+  font-family: Arial, sans-serif; /* Using a clean and modern font */
+  line-height: 1.6; /* Improved readability */
+  color: #333; /* Darker text for better contrast */
+  background-color: #f4f4f4; /* Light background color for the page */
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #3a6ea5; /* Matching the h1 color for links */
-  text-decoration: none; /* Remove underline */
+/* Header Styling */
+header {
+  background-color: #3a6ea5; /* Consistent color with other elements */
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  padding: 20px;
 }
 
-a:hover {
-  text-decoration: underline; /* Add underline on hover for better UX */
-}
-
-button {
-  background-color: #3a6ea5; /* Consistent with h1 color */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #2a4a75; /* Darker shade on hover */
-}
-
-form {
-  margin: 20px auto;
-  max-width: 600px;
+/* Main Content Styling */
+main {
   padding: 20px;
   background-color: #fff;
+  margin: 20px auto;
+  max-width: 900px;
   border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 20px;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  main {
+    padding: 10px;
+    margin: 10px auto;
+  }
+  
+  header, footer {
+    padding: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
 }
